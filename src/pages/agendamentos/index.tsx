@@ -63,7 +63,7 @@ const Schedules = () => {
   };
 
   return (
-    <Layout loading={loading}>
+    <Layout loading={loading} background="#fff">
       <Container>
         <Box>
           <>
@@ -124,7 +124,6 @@ const Schedules = () => {
                     const selectedProcedure = proceduresAvailable.find(
                       (item) => item.id === Number(event.target.value)
                     );
-                    debugger;
                     setSelect(selectedProcedure);
                   }}
                 />

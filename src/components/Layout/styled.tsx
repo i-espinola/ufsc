@@ -7,6 +7,7 @@ const Main = styled.main`
   position: relative;
   width: 100%;
   min-height: 100vh;
+  background: ${(props) => props.theme.background};
 `;
 
 export { Main };

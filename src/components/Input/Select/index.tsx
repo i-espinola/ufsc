@@ -30,7 +30,6 @@ const Select = (props: any) => {
     options,
   } = props;
   const idName = name || label.replace(/ /g, '-').toLowerCase();
-  debugger;
   const elementSelect = (
     <>
       <select

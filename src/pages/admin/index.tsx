@@ -116,7 +116,7 @@ const Admin = () => {
   });
 
   return (
-    <Layout loading={loading}>
+    <Layout loading={loading} background="#fff">
       <Container>
         <Row>
           <Col>
