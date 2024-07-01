@@ -1,0 +1,7 @@
+// .eslintignore
+build
+dist
+.next
+public
+
+# https://api.escaleos.escale.com.br/telecom-base-cep/availability?cep=88066-550

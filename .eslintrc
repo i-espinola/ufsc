@@ -1,0 +1,53 @@
+{
+  "plugins": ["prettier", "@typescript-eslint", "react-hooks"],
+  "extends": [
+    "airbnb-typescript",
+    "plugin:react-hooks/recommended",
+    "react-app",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "rules": {
+    "no-param-reassign": 0,
+    "object-curly-spacing": ["warn", "always"],
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "none"
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": [
+      "ignore",
+      {
+        "ignoreRestArgs": true
+      }
+    ],
+    "max-len": [
+      "warn",
+      {
+        "code": 80,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreComments": true
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-props-no-spreading": "ignore",
+    "react/no-danger": "off",
+    "no-alert": "error",
+    "no-": "error",
+    "no-console": "error"
+  }
+}

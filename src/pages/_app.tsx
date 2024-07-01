@@ -1,23 +1,24 @@
-import { Inter } from "next/font/google";
+import { Inter } from 'next/font/google';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle, tokens } from '@app/styles/theme';
 import type { AppProps } from 'next/app';
-import "@app/styles/globals.css";
- 
+
 const inter = Inter({
   weight: ['400', '700'],
   style: ['normal'],
   subsets: ['latin'],
-  display: 'swap'
+  display: 'swap',
 });
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <>
-      <main className={inter.className}>
+    <div className={inter.className}>
+      <ThemeProvider theme={tokens}>
+        <GlobalStyle theme={tokens} />
         <Component {...pageProps} />
-      </main>
-    </>
-  )
-  
-}
+      </ThemeProvider>
+    </div>
+  );
+};
 
 export default App;
