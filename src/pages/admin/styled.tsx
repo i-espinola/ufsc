@@ -29,6 +29,7 @@ const Button = styled.button`
   margin: 10px;
   cursor: pointer;
   transition: all 0.5s ease;
+  background-color: #ccc;
 
   &:hover {
     background: ${tokens.color.danger};
